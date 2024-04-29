@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -12,12 +11,8 @@ import {
 import { AcmeLogo } from "@/app/components/icons";
 import { ThemeSwitcher, UserApp } from "@/app/dashboard/components";
 import { usePathname } from "next/navigation";
+import { links } from "@/app/lib/data";
 
-const links = [
-  { name: "Features", pathname: "/" },
-  { name: "Customers", pathname: "/customers" },
-  { name: "Integrations", pathname: "/integrations" },
-];
 export const NavbarApp = () => {
   const pathname = usePathname();
   return (
